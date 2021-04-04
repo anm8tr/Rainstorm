@@ -13,6 +13,10 @@
 		588A74BA26197FDD00D36A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588A74B826197FDD00D36A6D /* Main.storyboard */; };
 		588A74BC26197FDD00D36A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 588A74BB26197FDD00D36A6D /* Assets.xcassets */; };
 		588A74BF26197FDD00D36A6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588A74BD26197FDD00D36A6D /* LaunchScreen.storyboard */; };
+		588A74EE26198E8000D36A6D /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588A74ED26198E8000D36A6D /* DayViewController.swift */; };
+		588A74F026198E9000D36A6D /* WeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588A74EF26198E9000D36A6D /* WeekViewController.swift */; };
+		588A74F72619916B00D36A6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588A74F62619916B00D36A6D /* ViewController.swift */; };
+		588A74F92619924E00D36A6D /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588A74F82619924E00D36A6D /* UIStoryboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		588A74BB26197FDD00D36A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		588A74BE26197FDD00D36A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		588A74C026197FDD00D36A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		588A74ED26198E8000D36A6D /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		588A74EF26198E9000D36A6D /* WeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewController.swift; sourceTree = "<group>"; };
+		588A74F62619916B00D36A6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		588A74F82619924E00D36A6D /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		588A74B126197FDD00D36A6D /* Rainstorm */ = {
 			isa = PBXGroup;
 			children = (
+				588A74F3261990FE00D36A6D /* Extensions */,
 				588A74C62619802700D36A6D /* Delegates */,
 				588A74C72619808000D36A6D /* View Controllers */,
 				588A74C92619816A00D36A6D /* Story Boards */,
@@ -78,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				588A74C8261980B200D36A6D /* Root ViewController */,
+				588A74EC26198E0D00D36A6D /* Weather View Controllers */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -113,6 +123,40 @@
 				588A74C026197FDD00D36A6D /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		588A74EC26198E0D00D36A6D /* Weather View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				588A74F126198E9400D36A6D /* Day View Controller */,
+				588A74F226198EA100D36A6D /* Week View Controller */,
+			);
+			path = "Weather View Controllers";
+			sourceTree = "<group>";
+		};
+		588A74F126198E9400D36A6D /* Day View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				588A74ED26198E8000D36A6D /* DayViewController.swift */,
+			);
+			path = "Day View Controller";
+			sourceTree = "<group>";
+		};
+		588A74F226198EA100D36A6D /* Week View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				588A74EF26198E9000D36A6D /* WeekViewController.swift */,
+			);
+			path = "Week View Controller";
+			sourceTree = "<group>";
+		};
+		588A74F3261990FE00D36A6D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				588A74F62619916B00D36A6D /* ViewController.swift */,
+				588A74F82619924E00D36A6D /* UIStoryboard.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +229,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588A74F72619916B00D36A6D /* ViewController.swift in Sources */,
+				588A74F026198E9000D36A6D /* WeekViewController.swift in Sources */,
 				588A74B726197FDD00D36A6D /* RootViewController.swift in Sources */,
 				588A74B326197FDD00D36A6D /* AppDelegate.swift in Sources */,
 				588A74B526197FDD00D36A6D /* SceneDelegate.swift in Sources */,
+				588A74EE26198E8000D36A6D /* DayViewController.swift in Sources */,
+				588A74F92619924E00D36A6D /* UIStoryboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R27EL9WB63;
 				INFOPLIST_FILE = "Rainstorm/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R27EL9WB63;
 				INFOPLIST_FILE = "Rainstorm/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
